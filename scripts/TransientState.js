@@ -3,6 +3,7 @@ const transientState = {
     "wheelId": 0,
     "technologyId": 0,
     "interiorId": 0,
+    "modelId": 0
 
 }
 
@@ -23,6 +24,12 @@ export const setTechId = (chosen) => {
 
 export const setInteriorId = (chosen) => {
     transientState.interiorId = chosen
+    console.log(transientState)
+}
+
+export const setModelId = (chosen) => {
+    transientState.modelId = chosen
+    
     console.log(transientState)
 }
 

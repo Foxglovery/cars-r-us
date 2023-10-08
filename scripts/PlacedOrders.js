@@ -4,6 +4,7 @@ export const PlacedOrdersGen = async () => {
     let orderHTML = "<h2>Whips For To Build</h2>"
     const divStringArray = orders.map(
         (order) => {
+            
             const orderPrice = order.paint.price + order.technology.price + order.wheel.price + order.interior.price
             // To automatically format the number as currency
                 const USDorderPrice =orderPrice.toLocaleString("en-US", {
